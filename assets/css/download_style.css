@@ -1,0 +1,408 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f7f8fa;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    font-weight: 300;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #2b3a55;
+    transition: background-color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff7f50;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 40px;
+    background: linear-gradient(135deg, #f5f5f5 50%, #2b3a55 50%);
+    color: #2b3a55;
+}
+
+.hero .hero-content {
+    margin-bottom: 20px;
+}
+
+.hero .intro-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.hero h1 {
+    font-family: 'Monaco', serif;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* Call to Action Container */
+.cta-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    /* width: 100%; */
+    padding-bottom: 20px; /* Consistent bottom padding */
+}
+
+.cta-container .box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: #333;
+}
+
+.cta-container .box h3 {
+    font-size: 1.5rem;
+    color: #2b3a55;
+    margin-bottom: 10px;
+}
+
+.cta-container .box p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.cta-container .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-container .btn {
+    background-color: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-container .btn:hover {
+    background-color: #e2673d;
+}
+
+/* Explore Section */
+.explore-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f2f4f7;
+}
+
+/* Explore Section Container */
+.explore-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Explore Heading */
+.explore-section h2 {
+    font-size: 2.5rem;
+    color: #2b3a55;
+    margin-bottom: 20px;
+}
+
+.howto {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #2b3a55;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.box ol {
+    list-style-position: inside;  /* Ensures numbers are inside the list */
+    padding-left: 0;  /* Remove default padding */
+    margin: 0 auto;  /* Center the list */
+    max-width: 600px; /* Optional: limit max width to match the rest of the text */
+}
+
+/* Style for list items (li) */
+.box ol li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* General styling for the section */
+.other-info {
+    background-color: #f8f9fa; /* Light background to make it stand out */
+    padding: 50px 20px; /* Add padding for spacing around the content */
+    text-align: center; /* Center-align text */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 1000px; /* Restrict the maximum width */
+    margin: 0 auto; /* Center the section */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading Styles */
+.other-info h2 {
+    font-size: 2.2rem; /* Make the title large */
+    color: #333; /* Dark text color */
+    margin-bottom: 30px; /* Space between the title and content */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+/* Container for Boxes */
+.cta-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of boxes on smaller screens */
+    justify-content: space-between; /* Distribute boxes evenly */
+    gap: 30px; /* Space between the boxes */
+}
+
+/* Box Style */
+.box {
+    background-color: #fff; /* White background for each box */
+    padding: 30px; /* Padding inside each box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for the box */
+    width: 30%; /* Set box width to 30% for 3 boxes in a row */
+    min-width: 280px; /* Ensure the box doesn't shrink too much on smaller screens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover */
+}
+
+.box h3 {
+    font-size: 1.8rem; /* Make subheadings larger */
+    color: #2b3a55; /* Darker color for the subheading */
+    margin-bottom: 15px; /* Space below the subheading */
+}
+
+.box p {
+    font-size: 1.1rem; /* Adjust font size for better readability */
+    color: #666; /* Lighter color for the text */
+    line-height: 1.5; /* Increase line height for better readability */
+    margin-bottom: 20px; /* Add margin between text and button */
+}
+
+/* Button Styling */
+.btn {
+    background-color: #0366d6; /* GitHub blue color */
+    color: #fff; /* White text */
+    padding: 12px 25px; /* Padding for the button */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Set font size */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    display: inline-block; /* Make the link behave like a button */
+}
+
+.btn:hover {
+    background-color: #0058a3; /* Darker blue on hover */
+}
+
+/* Hover Effects for Box */
+.box:hover {
+    transform: translateY(-10px); /* Lift the box on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow for the hover effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cta-container {
+        flex-direction: column; /* Stack boxes vertically on small screens */
+        align-items: center; /* Center the items */
+    }
+
+    .box {
+        width: 80%; /* Make boxes wider on small screens */
+        margin-bottom: 20px; /* Add space between stacked boxes */
+    }
+}
+
+/* Info Section */
+.info-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left Side */
+.left-side {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image-content {
+    max-width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Side */
+.right-side {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.right-side h2 {
+    font-size: 2rem;
+    color: #2b3a55;
+}
+
+.right-side p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Contact Section */
+/* GitHub Info Section */
+.github-info {
+    background-color: #f5f5f5; /* Light background to differentiate the section */
+    padding: 40px 20px; /* Add padding to create space around the content */
+    text-align: center; /* Center the content inside the section */
+    border-radius: 10px; /* Optional: Adds rounded corners for a softer look */
+    max-width: 800px; /* Restrict maximum width for better readability */
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+/* Heading Style */
+.github-info h2 {
+    font-size: 2rem; /* Increase font size for better readability */
+    color: #2b3a55; /* Use a dark color for the heading */
+    margin-bottom: 15px; /* Add space between the heading and the content below */
+    font-weight: bold; /* Make the heading stand out */
+}
+
+/* Paragraph Style */
+.github-info p {
+    font-size: 1.2rem; /* Slightly larger font size for the paragraph */
+    color: #555; /* Use a softer gray for the paragraph text */
+    line-height: 1.6; /* Improve readability by increasing line spacing */
+    margin-bottom: 20px; /* Add space between the paragraph and the button */
+}
+
+/* GitHub Button Style */
+.btn-github {
+    background-color: #24292f; /* Dark color to represent GitHub */
+    color: #fff; /* White text for contrast */
+    text-decoration: none; /* Remove underline from the link */
+    padding: 12px 25px; /* Add padding to make the button larger */
+    border-radius: 8px; /* Rounded corners for the button */
+    font-size: 1.1rem; /* Increase font size slightly */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    display: inline-block; /* Makes the link behave like a block-level element */
+}
+
+.btn-github:hover {
+    background-color: #0366d6; /* Lighter blue when hovering */
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    .github-info {
+        padding: 30px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .github-info h2 {
+        font-size: 1.8rem; /* Slightly smaller font size for the heading */
+    }
+
+    .github-info p {
+        font-size: 1rem; /* Adjust font size for the paragraph */
+    }
+
+    .btn-github {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 10px 20px; /* Adjust button padding */
+    }
+}
+/* Footer */
+footer {
+    background-color: #2b3a55;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #a6b1c3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #d4d8e2;
+    text-decoration: underline;
+}

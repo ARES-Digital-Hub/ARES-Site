@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARES - Analytical Robotic Evaluation Service</title>
+    <link rel="stylesheet" href="assets/css/index_style.css">
+</head>
+<body>
+
+    <!-- Header with navigation tabs -->
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="download.html">Add</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="upcoming.html">Upcoming</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Text on Top Left, Meet & ARES Closer -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="intro-text">Meet,</p>
+            <h1 id="ares-title">ARES</h1>
+        </div>
+
+        <div class="cta-container">
+            <div class="box">
+                <h3>Alliance Score</h3>
+                <p>Our system provides real-time performance data, enabling precise analysis of robot behavior during matches.</p>
+            </div>
+            <div class="box">
+                <h3>Match Scores</h3>
+                <p>ARES analyzes data to identify optimization opportunities, helping teams improve robot performance in future matches.</p>
+            </div>
+            <div class="box">
+                <h3>ARES</h3>
+                <p class="cta-tagline">Bring the Analytical Robotic Evaluation System to your server today!</p>
+                <a href="https://discord.com/oauth2/authorize?client_id=1327489137238081566" class="btn">Add to Your Server</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="info-section">
+            <div class="left-side">
+                <div class="image-content">
+                    <img src="assets/images/AboutUs.jpg" alt="ARES Robotics in Action">
+                </div>
+            </div>
+            <div class="right-side">
+                <h2>About Us</h2>
+                <p>ARES helps teams optimize robot performance through advanced data tracking and analysis, ensuring precision in every match.</p>
+                <p>Pioneer 327 is powered by ARES, providing real-time performance data and cutting-edge robotic insights.</p>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p>
+                        We're a small team always looking for suggestions and to find bugs. 
+                        If you have any feedback or questions, feel free to reach out!
+                    </p>
+                </div>
+                <form action="submit_form.php" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 ARES. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="tac.html">Terms and Conditions</a></p>
+        </div>
+    </footer>
+
+    <script src="assets/scripts/indexscript.js"></script>
+
+</body>
+</html>
