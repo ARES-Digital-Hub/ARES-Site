@@ -164,12 +164,30 @@ nav ul li a:hover {
     color: #555;
 }
 
+.text-and-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.text-and-logo .intro-text,
+.text-and-logo h1 {
+    margin: 0;
+}
+
+.logo {
+    max-width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin-left: 150%; /* Space between text and logo */
+}
+
 .info-section {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
-    padding: 20px 20px; /* Adjusted padding to ensure equal top and bottom */
+    padding: 10px 10px; /* Adjusted padding to ensure equal top and bottom */
     max-width: 1200px;
     margin: 0 auto;
 }
