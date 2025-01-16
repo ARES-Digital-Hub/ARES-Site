@@ -32,4 +32,13 @@ function App() {
   )
 }
 
-export default App
+function TestApp() {
+
+  return (
+    <>
+    <h1>Hi </h1>
+    </>
+  )
+}
+
+export default TestApp
